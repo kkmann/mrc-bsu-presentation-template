@@ -1,60 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Fira+Code');
 
 body {
-    font-family: sans-serif, 'Open Sans';
+    font-family: 'Ubuntu';
 }
 
 .remark-code, .remark-inline-code {
-    font-family: 'Fira Code', 'Lucida Console', Monaco, monospace;
+    font-family: 'Fira Code';
 }
 code.hljs.remark-code {
     background-color: #f3f1ef;
 }
 
 
-h1 {
-  color: #21677E;
+h1, h2 {
+    color: #21677E;
 }
 
-h2, h3 {
-  color: #8a7967;
+h3 {
+    color: #8a7967;
 }
 
 
 .inverse {
-  background-color: #8A7967;
-  color: #ffffff;
-  text-shadow: 0 0 20px #453c33;
+    background-color: #8A7967;
+    color: #ffffff;
+    text-shadow: 0 0 20px #453c33;
 }
 
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .title-slide {
-  background-image: url(MRC_BSU_Cambridge_colour_profprint_A5.svg);
-  background-size: 800px 200px;
-  background-position: top;
-  background-color: #ffffff;
+    background-image: url(images/MRC_BSU_Cambridge_colour_profprint_A5.svg);
+    background-size: 800px 200px;
+    background-position: top;
+    background-color: #ffffff;
 }
 
 .title-slide .remark-slide-number {
-  display: none;
+    display: none;
 }
 
 .title-slide h1 {
-  margin-top: +175px;
-  color: #21677E;
-  text-shadow: 0 0 0 #bcd1d8;
+    margin-top: +50px;
+    color: #21677E;
+    text-shadow: 0 0 0 #bcd1d8;
 }
 
-.title-slide h2, .title-slide h3 {
-  color: #847059;
-  text-shadow: 0 0 0 #bcd1d8;
+.title-slide h2 {
+    margin-bottom: +75px;
+    color: #21677E;
+    text-shadow: 0 0 0 #bcd1d8;
+}
+
+.title-slide h3 {
+    color: #847059;
+    text-shadow: 0 0 0 #bcd1d8;
 }
 
 a, a > code {
-  color: #6A3B77;
-  text-decoration: none;
+    color: #6A3B77;
+    text-decoration: none;
+}
+
+#wrap {
+  width:  750px;
+  height: 450px;
+  padding:  0;
+  overflow: hidden;
+}
+
+#scaled-frame {
+  width:  1500px;
+  height:  900px;
+  border:     0;
+}
+
+#scaled-frame {
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.5);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #scaled-frame {
+    zoom: 1;
+  }
 }

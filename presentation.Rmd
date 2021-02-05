@@ -1,8 +1,8 @@
 ---
-title:    "Template HTML Presentation"
-subtitle: "based on xaringan"
-author:   "@kevin_kunzmann"
-date:     "2016/12/12 (updated: `r Sys.Date()`)"
+title:    "Title"
+subtitle: "Subtitle"
+author:   "author name"
+date:     "`r format(as.Date('0042-05-25'), format = '%B %d, %Y')` updated `r format(Sys.Date(), format = '%B %d, %Y')`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -532,10 +532,8 @@ class: center, middle
 
 # Thanks!
 
-![](iph.jpg)
+![](images/iph.jpg)
 
 [**www.mrc-bsu.cam.ac.uk**](www.mrc-bsu.cam.ac.uk)
-
-[**@kevin_kunzmann**](https://twitter.com/kevin_kunzmann)
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
